@@ -2,15 +2,15 @@ name: JD_Sign_Action
 
 on:
   # repository_dispatch:
-  release:
-    types: published
+  # release:
+  #   types: published
   # push:
   #   branches:
   #     - master
   schedule:
     - cron: 0 20 * * *
-  watch:
-    types: started
+  # watch:
+  #   types: started
     
 env:
   JD_COOKIE: ${{ secrets.JD_COOKIE }}
